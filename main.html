@@ -1,172 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Replay</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gram Panchayat - Kotewada</title>
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div class="header">
-     <div class="left">
-      <span>
-       महाराष्ट्र शासन
-      </span>
-      <span>
-       GOVERNMENT OF MAHARASHTRA
-      </span>
-     </div>
-     <div class="right">
-      <a href="#">
-       SKIP TO MAIN CONTENT
-      </a>
-      <a href="#">
-       <i class="fas fa-search">
-       </i>
-      </a>
-      <a href="#">
-       ENGLISH
-      </a>
-     </div>
-    </div>
-    <div class="main-header">
-     <div class="left">
-      <img alt="Government of Maharashtra Emblem" height="80" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-rr7UwWKU23DPjNL14RomBpJD.png?st=2024-09-24T15%3A23%3A59Z&amp;se=2024-09-24T17%3A23%3A59Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-24T00%3A41%3A09Z&amp;ske=2024-09-25T00%3A41%3A09Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=4m3RsIeKi%2BnqEEFe3FjiwJRJq4tUhs8cti%2Ba1juDejc%3D" width="80"/>
-      <div class="text">
-       <h1>
-        Home Department
-       </h1>
-       <h2>
-        Government of Maharashtra
-       </h2>
+  <!-- Header Section -->
+  <header class="py-3 bg-light">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <img src="/Images/emb.png" alt="Government of India Emblem" width="30" height="30" class="me-2">
+        <div>
+          <h5 class="mb-0">महाराष्ट्र शासन</h5>
+          <small>GOVERNMENT OF MAHARASHTRA</small>
+        </div>
       </div>
-     </div>
-     <div class="right">
-      <img alt="Digital India Logo" height="80" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-YQwHOcLO954eMDcdX8X3dwGz.png?st=2024-09-24T15%3A24%3A54Z&amp;se=2024-09-24T17%3A24%3A54Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-23T23%3A16%3A42Z&amp;ske=2024-09-24T23%3A16%3A42Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=Uf/9UENjx4euVTc2BypnW15vWHenGDYUw4kIwY%2Bxfh0%3D" width="80"/>
-     </div>
+       <!-- Language Switcher -->
+        <div class="language-switcher">
+            <button id="english-btn" class="btn btn-primary">English</button>
+            <button id="marathi-btn" class="btn btn-secondary">मराठी</button>
+        </div>
     </div>
-    <div class="navbar">
-     <a class="active" href="#">
-      HOME
-     </a>
-     <div class="dropdown">
-      <a class="dropbtn" href="#">
-       ABOUT DEPARTMENT
-      </a>
-      <div class="dropdown-content">
-       <a href="#">
-        Link 1
-       </a>
-       <a href="#">
-        Link 2
-       </a>
-       <a href="#">
-        Link 3
-       </a>
+  </header>
+
+  <!-- Main Header -->
+  <div class="main-header bg-primary text-white py-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <img src="https://www.maharashtra.gov.in/images/logo_MH.png" alt="Government Emblem" width="50" height="50" class="me-3">
+        <div class="text">
+          <h1 class="h4 mb-1">Home Department</h1>
+          <h2 class="h6">Government of Maharashtra</h2>
+        </div>
       </div>
-     </div>
-     <a href="#">
-      DIRECTORY
-     </a>
-     <div class="dropdown">
-      <a class="dropbtn" href="#">
-       DOCUMENTS
-      </a>
-      <div class="dropdown-content">
-       <a href="#">
-        Link 1
-       </a>
-       <a href="#">
-        Link 2
-       </a>
-       <a href="#">
-        Link 3
-       </a>
-      </div>
-     </div>
-     <div class="dropdown">
-      <a class="dropbtn" href="#">
-       NOTICES
-      </a>
-      <div class="dropdown-content">
-       <a href="#">
-        Link 1
-       </a>
-       <a href="#">
-        Link 2
-       </a>
-       <a href="#">
-        Link 3
-       </a>
-      </div>
-     </div>
-     <div class="dropdown">
-      <a class="dropbtn" href="#">
-       MEDIA CORNER
-      </a>
-      <div class="dropdown-content">
-       <a href="#">
-        Link 1
-       </a>
-       <a href="#">
-        Link 2
-       </a>
-       <a href="#">
-        Link 3
-       </a>
-      </div>
-     </div>
-     <div class="dropdown">
-      <a class="dropbtn" href="#">
-       RTI
-      </a>
-      <div class="dropdown-content">
-       <a href="#">
-        Link 1
-       </a>
-       <a href="#">
-        Link 2
-       </a>
-       <a href="#">
-        Link 3
-       </a>
-      </div>
-     </div>
-     <a href="#">
-      MARVEL
-     </a>
+      <img src="/Images/Digital-India-Color.png" alt="Digital India Logo" width="150" height="75">
     </div>
-    <div class="banner">
-     <img alt="Mantralaya Building lit up in tricolor" height="400" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-5GKxES2OVr7hn5RGIczoVBs0.png?st=2024-09-24T15%3A23%3A55Z&amp;se=2024-09-24T17%3A23%3A55Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-23T23%3A14%3A36Z&amp;ske=2024-09-24T23%3A14%3A36Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=OQQfkfjoECUYH7l3m2gmE05bqmLRAulnizuuOrRTCCg%3D" width="1200"/>
-     <div class="text">
-      Mantralaya
-     </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">How to Reach Kotewada</a>
+            <!-- <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="#">Link 1</a></li>
+              <li><a class="dropdown-item" href="#">Link 2</a></li>
+            </ul> -->
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="documentsDropdown" role="button" data-bs-toggle="dropdown">About village</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="documentsDropdown" role="button" data-bs-toggle="dropdown">Events & Announcements</a>
+            <!-- <ul class="dropdown-menu" aria-labelledby="documentsDropdown">
+              <li><a class="dropdown-item" href="#">About village</a></li>
+              <li><a class="dropdown-item" href="#">How to Reach Kotewada</a></li>
+            </ul> -->
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="mediaDropdown" role="button" data-bs-toggle="dropdown">Contact Us</a>
+            <!-- <ul class="dropdown-menu" aria-labelledby="mediaDropdown">
+              <li><a class="dropdown-item" href="#">Events & Announcements</a></li>
+              <li><a class="dropdown-item" href="#">Contact Us</a></li>
+            </ul> -->
+          </li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#">RTI</a></li> -->
+        </ul>
+      </div>
     </div>
-    <div class="news">
-     <div class="left">
-      Latest News
-     </div>
-     <div class="right">
-      <a href="#">
-       Police Complaint Authority
-       <span style="background-color: red; color: white; padding: 2px 5px; border-radius: 3px;">
-        New
-       </span>
-      </a>
-     </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="py-5 text-center bg-light">
+    <div class="container">
+      <h1 class="display-4">Welcome to Kotewada</h1>
+      <p class="lead">Experience the essence of our village.</p>
     </div>
-    <div class="carousel">
-     <div class="left">
-      <i class="fas fa-chevron-left">
-      </i>
-     </div>
-     <div class="right">
-      <i class="fas fa-chevron-right">
-      </i>
-     </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2>About the Village</h2>
+      <!-- ... (About section content remains the same) ... -->
+       <p><b>Locality Name</b> : Kotewada ( कोटेवाडा )</p>
+        <p><b>Taluka Name</b> : Hingna</p>
+        <p><b>District</b> : Nagpur</p>
+        <p><b>State</b> : Maharashtra</p>
+        <p><b>Region</b> : Vidarbh</p>
+        <p><b>Division</b> : Nagpur</p>
+        <p><b>Language</b> : Marathi and Hindi, English</p>
+        <p><b>Pin Code</b> : 441108</p>
+        <p><b>Post Office Name</b> : Bori (Nagpur)</p>
+        <p><b>Rivers Near Kotewada</b>
+            : Bor River, Kanhan River </p>
+            <br>
+            <br>
+    <p><strong>HOW TO REACH Kotewada</strong></p>
+    <div class="container1-2">
+        <p><a href="https://www.google.com/maps/place/Kotewada+Grampanchayat/@21.0203921,78.9999153,16.24z/data=!4m15!1m8!3m7!1s0x3bd4960a50a1ce4b:0xb52275f5305e8f52!2sKotewada,+Maharashtra+441108!3b1!8m2!3d21.0191857!4d79.001282!16s%2Fg%2F1hhgh7150!3m5!1s0x3bd4960bb51667bb:0xfe638018cde50de1!8m2!3d21.0186867!4d79.0008133!16s%2Fg%2F11f3z9l5l7?entry=ttu&g_ep=EgoyMDI0MTAwNy4xIKXMDSoASAFQAw%3D%3D"><img src="/Images/Screenshot 2024-10-10 at 4.46.59 PM.png" alt="map of Kotewada" class="image"></a>
+        <div class="middle">
+            <div class="text1-2"> click to get location of Kotewada Grampanchayat</div>
+        </div>
     </div>
-    <script src="script.js"></script>
+    <p>Kotewada is a Village in Hingna Taluka in Nagpur District of Maharashtra State, India. It belongs to Vidarbh region . It belongs to Nagpur Division . It is located 18 KM towards South from District head quarters Nagpur. 6 KM from Hingna. 794 KM from State capital Mumbai
+        Kotewada Pin code is 441108 and postal head office is Bori (Nagpur).</p>
+    <p>By Road: Nagpur to Kotewada is approximately 18km via NH 7.</p>
+    <p>By Rail: Gumgaon Rail Way Station , Khapri Rail Way Station are the very nearby railway stations to Kotewada. Nagpur Junction Rail Way Station (near to Nagpur) , Ajni Rail Way Station (near to Nagpur) are the Rail way stations reachable from near by towns.</p>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" class="py-5 bg-light">
+    <div class="container">
+      <h2>Events & Announcements</h2>
+      <div id="event-list" class="row"></div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/Images/IMG-20241008-WA0016.jpg" class="d-block w-100" alt="Village Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="/Images/IMG-20241008-WA0017.jpg" class="d-block w-100" alt="Village Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="/Images/Screenshot 2024-10-10 at 6.29.45 PM.png" class="d-block w-100" alt="Village Image 3">
+          </div>
+          <!-- ... (Carousel items remain the same) ... -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form id="contact-form" class="needs-validation" novalidate>
+            <div class="row">
+                <!-- Name Field -->
+                <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    <div class="invalid-feedback">
+                        Please enter your name.
+                    </div>
+                </div>
+                <!-- Email Field -->
+                <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid email.
+                    </div>
+                </div>
+            </div>
+            <!-- Message Field -->
+            <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Type your message here" required></textarea>
+                <div class="invalid-feedback">
+                    Please enter a message.
+                </div>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+
+  <!-- Footer Section -->
+  <footer class="py-4 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">&copy; 2024 Government of Maharashtra. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-end">
+          <a href="https://mahait.org/Site/1383/Disclaimer-and-Policies" class="text-white me-3">Privacy Policy</a>
+          <a href="https://mahait.org" class="text-white">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
 </body>
 </html>
